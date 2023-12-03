@@ -10,13 +10,13 @@ https://adventofcode.com/2023/day/2
   Loop could have probably been more concise as a list comprehension, but went three layers deep:
 
   1) loop through all the individual lines of text
-    - extract the game ID by splitting at the ":" and using regex to grab the digit from that section (if you want to avoide regex, could have done another split at the space and grab last element, which is he game #)
-    - extract all the draws in each game by grabbing what came after the ":", and then doing one more split at the semicolons
-    - before next nested loop, reset a dictionary that will keep track of the max # of cubes for each color (colorMap = {'red':0, 'green':0, 'blue':0})
+  - extract the game ID by splitting at the ":" and using regex to grab the digit from that section (if you want to avoide regex, could have done another split at the space and grab last element, which is he game #)
+  - extract all the draws in each game by grabbing what came after the ":", and then doing one more split at the semicolons
+  - before next nested loop, reset a dictionary that will keep track of the max # of cubes for each color (colorMap = {'red':0, 'green':0, 'blue':0})
 
   2) second loop iterates through each individual draw and does a split at the commas to break apart each cube color section
   3) third loop iterates through each pair of # of cubes/color and breaks apart the # and the color
-    - if the cubeNum is greater than the max # found so far in all the draw, replace the max in the colorMap dictionary
+  - if the cubeNum is greater than the max # found so far in all the draw, replace the max in the colorMap dictionary
 
   At the end of the loops, save the max colorMap into the games dictionary where key=Game ID, and value=the color map of max #s for each color.
 
