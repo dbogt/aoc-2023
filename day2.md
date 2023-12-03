@@ -8,6 +8,7 @@ https://adventofcode.com/2023/day/2
   <summary>Part 1 Solution</summary>
   I reused the regex from Day 1 to find all the digits in a string: r'\d+'.
   Loop could have probably been more concise as a list comprehension, but went three layers deep:
+
   1) loop through all the individual lines of text
   - extract the game ID by splitting at the ":" and using regex to grab the digit from that section (if you want to avoide regex, could have done another split at the space and grab last element, which is he game #)
   - extract all the draws in each game by grabbing what came after the ":", and then doing one more split at the semicolons
