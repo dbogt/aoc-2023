@@ -56,7 +56,39 @@ https://adventofcode.com/2023/day/6
   When $a \ne 0$,and $(ax^2 + bx + c = 0)$.
 
   From here we have two options, actually write out this formula in Python and solve for timeToPress, OR use numpy.roots() and provide the three coefficients.
+  ```python
+  #%% Source files
+  import re
+  fPath = "../aoc-2023-Src/"
+  # f = open(fPath+"d6DemoInputs.txt", "r")
+  f = open(fPath+"d6ActualInputs.txt", "r")
+  inputs = f.read()
+  lines = inputs.splitlines()
+  
+  #%% Part 1
+  times = [int(x) for x in re.findall(r'\d+', lines[0])]
+  dists = [int(x) for x in re.findall(r'\d+', lines[1])]
+  
+  winsMap = {}
+  
+  for idx, time in enumerate(times):
+      record = dists[idx]
+      waysWin = []
+      distsWin = []
+      for timePress in range(1, time):
+          timeMove = time - timePress
+          speed = timePress
+          dist = speed * timeMove
+          if dist > record:
+              waysWin.append(timePress)
+              distsWin.append(dist)
+      winsMap[time] = {'PressWins':waysWin,'DistWins':distsWin,'WinsCount':len(waysWin)}
+  
+  import pandas as pd
+  df = pd.DataFrame(winsMap).T
+  print("Part 1", df['WinsCount'].product())
 
+  ```
   ```python
   #%% Part 2
   import numpy as np
