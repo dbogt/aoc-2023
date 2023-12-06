@@ -73,6 +73,7 @@ https://adventofcode.com/2023/day/6
   totalWays = int(np.max(roots)) - np.ceil(np.min(roots)) + 1
   print(totalWays)
   ```
+
   Here is also the more detailed build up to my equation:
   ```python
   # t = time of race
@@ -91,5 +92,6 @@ https://adventofcode.com/2023/day/6
   #quadratic formula ax2 + bx + c = 0 --> x = [-b +/- sqrt(b^2 - 4ac)]/2a
   # b = t, a = -1, c = -c
   # x0 = (-t +/- sqrt(t^2 - 4*c)) / (-2)
+  ```
 </details>
 
