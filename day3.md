@@ -47,8 +47,8 @@ https://adventofcode.com/2023/day/3
           else:
               partNums.append(int(num))
             
-    print("Part 1", sum(partNums))
-    ```
+  print("Part 1", sum(partNums))
+  ```
 
 </details>
 
@@ -85,12 +85,12 @@ https://adventofcode.com/2023/day/3
                   if (start-1 <= x <= end) or (x-1 <= end-1 <= x+1) or (x-1 <=start<= x+1):
                       gearsMap[gear].append(num)
   
-    gearRatios = []
-    for key, val in gearsMap.items():
-        if len(val) == 2:
-            gearRatios.append(int(val[0]) * int(val[1]))
+  gearRatios = []
+  for key, val in gearsMap.items():
+      if len(val) == 2:
+          gearRatios.append(int(val[0]) * int(val[1]))
     
-    print("Part 2", sum(gearRatios))
-    ```
+  print("Part 2", sum(gearRatios))
+  ```
 
 </details>
