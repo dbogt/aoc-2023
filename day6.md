@@ -52,7 +52,7 @@ https://adventofcode.com/2023/day/6
   $$-1* timeToPress ^ 2 + timeRace * timeToPress - recordDistance >= 0$$
 
   From math class we remember that quadratic formula is: 
-  $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+  $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
   When $a \ne 0$,and $(ax^2 + bx + c = 0)$.
 
   From here we have two options, actually write out this formula in Python and solve for timeToPress, OR use numpy.roots() and provide the three coefficients.
