@@ -45,7 +45,7 @@ https://adventofcode.com/2023/day/6
 </details>
 
 <details>
-  <summary>Part 2 Solution</summary>
+  <summary>Part 2 Hints</summary>
   Part 2 was fairly once you realize you can't just brute force loops, and you need to solve with simple math. This ends up being a quadratic equation from grade 9/10 math. 
 
   Once you use some good old fashioned pen and paper, the equation is essentially:
@@ -56,6 +56,10 @@ https://adventofcode.com/2023/day/6
   When $a \ne 0$,and $(ax^2 + bx + c = 0)$.
 
   From here we have two options, actually write out this formula in Python and solve for timeToPress, OR use numpy.roots() and provide the three coefficients.
+
+<details>
+  <summary>Part 2 Solution</summary>
+  
   ```python
   #%% Source files
   import re
@@ -89,7 +93,9 @@ https://adventofcode.com/2023/day/6
   print("Part 1", df['WinsCount'].product())
 
   ```
-  ```python
+</details>
+
+  ```python  
   #%% Part 2
   import numpy as np
   time = int("".join(re.findall(r'\d+', lines[0])))
@@ -105,6 +111,7 @@ https://adventofcode.com/2023/day/6
   totalWays = int(np.max(roots)) - np.ceil(np.min(roots)) + 1
   print(totalWays)
   ```
+
 
   Here is also the more detailed build up to my equation:
   ```python
