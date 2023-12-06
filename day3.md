@@ -49,6 +49,7 @@ https://adventofcode.com/2023/day/3
             
     print("Part 1", sum(partNums))
     ```
+
 </details>
 
 <details>
@@ -91,4 +92,5 @@ https://adventofcode.com/2023/day/3
     
     print("Part 2", sum(gearRatios))
     ```
+
 </details>
