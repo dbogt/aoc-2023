@@ -7,9 +7,9 @@ Below is also a summary of all the days.
 
 - [AOC2023-D01](day1.md) Day 1: Trebuchet?!: https://adventofcode.com/2023/day/1
 - [AOC2023-D02](day2.md) Day 2: Cube Conundrum: https://adventofcode.com/2023/day/2
-- [AOC2023-D06](day6.md) Day 3: Gear Ratios: https://adventofcode.com/2023/day/3
-- [AOC2023-D06](day6.md) Day 4: Scratchcards: https://adventofcode.com/2023/day/4
-- [AOC2023-D06](day6.md) Day 5: If You Give A Seed A Fertilizer: https://adventofcode.com/2023/day/5
+- [AOC2023-D06](day3.md) Day 3: Gear Ratios: https://adventofcode.com/2023/day/3
+- [AOC2023-D06](day4.md) Day 4: Scratchcards: https://adventofcode.com/2023/day/4
+- [AOC2023-D06](day5.md) Day 5: If You Give A Seed A Fertilizer: https://adventofcode.com/2023/day/5
 - [AOC2023-D06](day6.md) Day 6: Wait For It: https://adventofcode.com/2023/day/6
 
 ## Background on Challenge
