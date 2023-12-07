@@ -8,7 +8,8 @@ https://adventofcode.com/2023/day/7
 
 <details>
   <summary>Part 1 Solution</summary>
-  I first made a function that categorizes the hand as "Five of a kind", "Four of a kind", etc. then put the hands, bids, and hand types as columns in a DataFrame. To easily sort, I first converted all the letter cards (T, J, Q, K, A) into letters: `cardMap = {'T':'t', 'J':'u', 'Q':'x', 'K':'y', 'A':'z'}`.
+  I first made a function that categorizes the hand as "Five of a kind", "Four of a kind", etc. then put the hands, bids, and hand types as columns in a DataFrame. To easily sort, I first converted all the letter cards (T, J, Q, K, A) into letters: **cardMap = {'T':'t', 'J':'u', 'Q':'x', 'K':'y', 'A':'z'}**.
+  
   Then at the end when you sort the table, you can sort first on the type category rank, and then alphabetically by hand if needed.
   
   ```python
