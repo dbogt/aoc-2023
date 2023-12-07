@@ -11,6 +11,7 @@ Below is also a summary of all the days.
 - [AOC2023-D04](day4.md) Day 4: Scratchcards: https://adventofcode.com/2023/day/4
 - [AOC2023-D05](day5.md) Day 5: If You Give A Seed A Fertilizer: https://adventofcode.com/2023/day/5
 - [AOC2023-D06](day6.md) Day 6: Wait For It: https://adventofcode.com/2023/day/6
+- [AOC2023-D07](day7.md) Day 7: Camel Cards: https://adventofcode.com/2023/day/7
 
 ## Background on Challenge
 *Details on Advent of Code*
