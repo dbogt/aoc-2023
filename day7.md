@@ -1,7 +1,8 @@
 ## [AOC2023-D07] Day 7: Camel Cards
+
 - Fun times with poker hands!
 - I ended up using the Counter object from collections package: https://docs.python.org/3/library/collections.html#collections.Counter
-  - E.g. if you do `Counter(['b','b','a',a','a']) it will provide a dictionary where keys are the letters and vals are the count of each unique letter
+  - E.g. if you do `Counter(['b','b','a',a','a'])` it will provide a dictionary where keys are the letters and vals are the count of each unique letter
   - You can then use .most_common() to sort largest to smallest counts
 
 https://adventofcode.com/2023/day/7
