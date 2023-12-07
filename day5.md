@@ -77,6 +77,8 @@ https://adventofcode.com/2023/day/5
 
 <details>
   <summary>Part 2 Solution</summary>
+
+  ```python
   #%% Part 2
   #new seeds and ranges
   import numpy as np
@@ -137,6 +139,7 @@ https://adventofcode.com/2023/day/5
   print("Part 2", dfALL3['Loc'].min(), dfALL3['Loc'].idxmin(), minLocSeed)
   
   dfSeeds['Range'].sum()
+  
   ```
 </details>
 
